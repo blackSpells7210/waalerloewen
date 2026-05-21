@@ -7,9 +7,26 @@
     <meta name="description" content="Offizieller Fanclub Waaler Löwen 1984 - TSV 1860 München Fanclub aus Bayern." />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+        
         .header-logo {
             max-width: 60px;
             height: auto;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-text strong {
+            font-size: 1.5em;
+            margin: 0;
         }
     </style>
 </head>
@@ -24,7 +41,7 @@
             <header id="header">
                 <div class="logo-container">
                     <img src="images/logo.png" alt="Waaler Löwen 1984 Logo" class="header-logo" />
-                    <a href="index.html" class="logo">
+                    <a href="index.html" class="logo logo-text">
                         <strong>Waaler Löwen 1984</strong>
                     </a>
                 </div>
@@ -106,9 +123,12 @@
                     <article>
                         <span class="icon solid fa-heart"></span>
                         <div class="content">
-                            <h3>Wer wir sind</h3>
+                            <h3>Über uns</h3>
                             <p>
-                                Nach inzwischen 40 Jahren sind wir ein fester Bestandteil unserer Gemeinde und weit darüber hinaus bekannt. Ob beim Fasching, beispielsweise als „Eiskönigin" unter dem Motto „Eingefroren in Liga 3", oder bei Dorfturnieren – wir sind stets mittendrin. Auch wurde in Waal der Maibaumbrauch 1991 durch uns wieder ins Leben gerufen. Neue Mitglieder durchlaufen vor der Aufnahme zunächst ein Probejahr, in dem sie sich unter anderem bei Festen und Fahrten engagieren sollen. Und wenn wir gemeinsam mit dem Bus ins Stadion fahren, darf natürlich auch unsere Zaunfahne in der Westkurve nicht fehlen.
+                                Die Waaler Löwen 1984 sind ein offizieller Fanclub des TSV 1860 München. Seit Jahrzehnten begleiten wir die Münchner Löwen durch gute und schwere Zeiten – ob im Grünwalder Stadion oder auswärts quer durch Deutschland.
+                            </p>
+                            <p>
+                                Gemeinschaft, Zusammenhalt und die Leidenschaft für Blau-Weiß stehen bei uns an erster Stelle.
                             </p>
                         </div>
                     </article>
@@ -118,13 +138,14 @@
 
             <section>
                 <header class="major">
-                    <h2>Termine & Veranstaltungen</h2>
+                    <h2 id="termine">Termine & Veranstaltungen</h2>
                 </header>
 
                 <div class="posts">
 
                     <article>
                         <h3>Sommerfest</h3>
+                        <img src="images/flyer-sommerfest.jpg" alt="Sommerfest Flyer" style="width: 100%; max-width: 300px; height: auto; margin-bottom: 1em; background-color: #e6e6e6; min-height: 200px;" />
                         <p>
                             Jährliches Sommerfest der Waaler Löwen mit Grillen,
                             Musik und gemütlichem Beisammensein.
@@ -133,6 +154,7 @@
 
                     <article>
                         <h3>Maifeuer</h3>
+                        <img src="images/flyer-maifeuer.jpg" alt="Maifeuer Flyer" style="width: 100%; max-width: 300px; height: auto; margin-bottom: 1em; background-color: #e6e6e6; min-height: 200px;" />
                         <p>
                             Traditionelles Maifeuer mit Getränken,
                             guter Stimmung und blau-weißer Atmosphäre.
@@ -141,6 +163,7 @@
 
                     <article>
                         <h3>Busfahrten</h3>
+                        <img src="images/flyer-busfahrten.jpg" alt="Busfahrten Flyer" style="width: 100%; max-width: 300px; height: auto; margin-bottom: 1em; background-color: #e6e6e6; min-height: 200px;" />
                         <p>
                             Informationen zu kommenden Busfahrten
                             werden rechtzeitig bekanntgegeben.
@@ -223,8 +246,7 @@
                 <ul>
                     <li><a href="index.html">Startseite</a></li>
                     <li><a href="#banner">Fanclub</a></li>
-                    <li><a href="#">Termine</a></li>
-                    <li><a href="#">Busfahrten</a></li>
+                    <li><a href="#termine">Termine</a></li>
                     <li><a href="#">Kontakt</a></li>
                     <li><a href="#">Impressum</a></li>
                 </ul>
